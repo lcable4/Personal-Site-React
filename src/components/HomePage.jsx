@@ -6,7 +6,15 @@ function HomePage() {
   return (
     <div className="HomePage">
       <div className="homePicture">
-        <p>Picture</p>
+        <img
+          src="/images/logos/portrait.png"
+          alt="portrait"
+          className="portrait"
+        />
+        <div className="quoteDiv">
+          <p>"The best way to predict the future is to invent it."</p>
+          <p>" - Alan Kay."</p>
+        </div>
       </div>
       <div className="homeDescription">
         <Navbar />

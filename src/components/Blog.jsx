@@ -1,12 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Navbar, Footer } from "./index";
 
 function Blog() {
   return (
-    <div className="Blog">
-      <p>Blog</p>
-      <Link to="/">Go back</Link>
-    </div>
+    <>
+      <Navbar />
+      <div className="Blog">
+        <p>Blog</p>
+        <Link to="/">Go back</Link>
+      </div>
+      <Footer />
+    </>
   );
 }
 

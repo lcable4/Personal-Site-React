@@ -9,6 +9,48 @@ function About() {
       <div className="About">
         <div className="aboutDesc">
           <h1>About me</h1>
+          <div className="paragraph">
+            <p>
+              Hi there! My name is Logan, and I'm a former CDL driver in the
+              beverage industry turned Fullstack developer. After spending many
+              years on the road, I decided to pursue a new career in tech, and
+              recently graduated from Fullstack Academy where I learned HTML,
+              CSS, JavaScript, React, and PSQL.
+            </p>
+          </div>
+          <div className="paragraph">
+            <p>
+              During my time at Fullstack, I had the opportunity to work on
+              several projects with partners as part of the curriculum. These
+              projects allowed me to hone my skills in software development and
+              collaborate effectively using GitHub. I'm excited to showcase my
+              projects and highlight my contributions to each of them.
+            </p>
+          </div>
+          <div className="paragraph">
+            <p>
+              As a former CDL driver, I bring a unique perspective to software
+              development. I'm used to solving problems on the fly and managing
+              complex logistical challenges. I believe these skills are
+              transferrable to the tech industry and will help me excel as a
+              software developer.
+            </p>
+          </div>
+          <div className="paragraph">
+            <p>
+              When I'm not coding, I enjoy cooking and listening to music. I'm
+              excited about the opportunities ahead of me in the tech industry,
+              and I'm eager to find a role where I can contribute my skills and
+              continue to learn and grow as a developer.
+            </p>
+          </div>
+          <div className="paragraph">
+            <p>
+              Thank you for taking the time to read my About Me section, and
+              feel free to reach out if you have any questions or opportunities
+              to discuss!
+            </p>
+          </div>
         </div>
       </div>
       <div className="Skills">

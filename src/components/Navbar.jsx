@@ -1,9 +1,13 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
+  const location = useLocation();
+  const isHomePage = location.pathname === "/";
+  const navbarClass = isHomePage ? "navbar-home" : "navbar";
+
   return (
-    <div id="navbar">
+    <div className={navbarClass}>
       <Link to="/">Home</Link>
       <div className="navLinkDiv"></div>
       <div className="navLinkDiv">
