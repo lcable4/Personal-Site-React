@@ -7,14 +7,15 @@ function Portfolio() {
     <>
       <Navbar />
       <div className="Portfolio">
-        <h1>My Work</h1>
+        <h1 className="portFolioHeaders1">My Work</h1>
         <div className="portfolioTop">
           <div className="projectTop">
-            <h3>Fitness Tracker</h3>
             <a
               href="https://fitnesstracker-application.netlify.app/"
               target="_blank"
+              className="portfolioLinks"
             >
+              <h3 className="portFolioHeaders">Fitness Tracker</h3>
               <img
                 src="/images/projects/fitnessTracker.png"
                 alt="Fitness Tracker"
@@ -23,11 +24,12 @@ function Portfolio() {
             </a>
           </div>
           <div className="projectTop">
-            <h3>Stranger's Things</h3>
             <a
               href="https://strangersthings-marketplace.netlify.app/"
               target="_blank"
+              className="portfolioLinks"
             >
+              <h3 className="portFolioHeaders">Stranger's Things</h3>
               <img
                 src="/images/projects/stranger'sThings.png"
                 alt="Stranger's Things"
@@ -38,7 +40,7 @@ function Portfolio() {
         </div>
         <div className="portfolioBottom">
           <div className="project">
-            <h3>Puppy Bowl</h3>
+            <h3 className="portFolioHeaders">Puppy Bowl</h3>
             <img
               src="/images/projects/puppyBowl.PNG"
               alt="Puppy Bowl"
@@ -46,7 +48,7 @@ function Portfolio() {
             />
           </div>
           <div className="project">
-            <h3>Qwirty</h3>
+            <h3 className="portFolioHeaders">Qwirty</h3>
             <img
               src="/images/projects/qwirty.png"
               alt="Qwirty"
@@ -54,7 +56,7 @@ function Portfolio() {
             />
           </div>
           <div className="project">
-            <h3>Tic-Tac-Toe</h3>
+            <h3 className="portFolioHeaders">Tic-Tac-Toe</h3>
             <img
               src="/images/projects/ticTacToe.png"
               alt="Tic-Tac-Toe"
@@ -62,9 +64,10 @@ function Portfolio() {
             />
           </div>
         </div>
-        <Link to="/">Go back</Link>
+        <Link className="goBackLinks" to="/">
+          Go back
+        </Link>
       </div>
-      <Footer />
     </>
   );
 }

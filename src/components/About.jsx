@@ -9,7 +9,7 @@ function About() {
       <div className="aboutPageContainer">
         <div className="About">
           <div className="aboutDesc">
-            <h1 className="aboutHeaders">About me</h1>
+            <h1 className="aboutHeaders1">About me</h1>
             <div className="paragraph">
               <p className="aboutPTags">
                 Hi there! My name is Logan, and I'm a former CDL driver in the

@@ -23,9 +23,10 @@ function Contact() {
         >
           Loading…
         </iframe>
+        <Link className="goBackLinks" to="/">
+          Go back
+        </Link>
       </div>
-      <Link to="/">Go back</Link>
-      <Footer />
     </>
   );
 }
