@@ -6,9 +6,6 @@ body {
 #app,
 #main {
   height: 100%;
-  position: relative;
-  margin-top: 20px; /* adjust the position of your main content to avoid overlapping with the navbar */
-  margin-bottom: 20px;
 }
 .navbar-home {
   background-color: black;
@@ -29,56 +26,26 @@ body {
   display: flex;
   align-items: center;
   max-height: 10%;
-  min-height: 40px;
+  min-height: 50px;
   top: 0;
   position: fixed;
   width: 100%;
   flex-direction: row;
   justify-content: space-evenly;
 }
-.footer-home {
-  background-color: black;
+.navBarLinks {
+  text-decoration: none;
   color: white;
-  display: flex;
-  align-items: center;
-  flex-grow: 1;
-  max-height: 10%;
-  min-height: 40px;
-  bottom: 0;
-  position: fixed;
-  width: 50%;
+  font-size: 20px;
 }
-.footer {
-  background-color: black;
-  color: white;
-  display: flex;
-  align-items: center;
-  flex-grow: 1;
-  max-height: 10%;
-  min-height: 40px;
-  bottom: 0;
-  position: fixed;
-  width: 100%;
+.navBarLinks:hover {
+  transform: scale(1.2);
 }
 
 .HomePage {
   height: 100vh;
   display: flex;
   flex-direction: row;
-}
-.portrait {
-  height: 300px;
-  width: 300px;
-  border-radius: 40%;
-  margin: 20px;
-}
-
-.homeDescription {
-  border: 1px solid black;
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
 }
 .homePicture {
   width: 50%;
@@ -87,13 +54,67 @@ body {
   justify-content: space-around;
   align-items: center;
 }
-.About {
-  border: 1px solid black;
-  height: 45%;
+.portrait {
+  height: 300px;
+  width: 300px;
+  border-radius: 10%;
+  margin: 20px;
+}
+.quoteDiv {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 25px;
+}
+.homePicture {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.homeDescription {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.introduction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.homePageHeaders,
+.aboutHeaders {
+  text-align: center;
+}
+.aboutHeaders1 {
+  text-align: center;
 }
 
+.aboutHeaders:hover,
+.skillLogo:hover {
+  transform: scale(1.2);
+}
+.homePageLinks {
+  text-decoration: none;
+  font-size: 20px;
+}
+.aboutPageContainer {
+  height: 100%;
+}
+.About {
+  height: 45%;
+  display: flex;
+  flex-direction: row;
+}
+.aboutPTags {
+  font-size: 20px;
+}
+.aboutRightDiv {
+  height: 100%;
+  width: 40%;
+  background-color: aliceblue;
+}
 .Skills {
-  height: 40%;
+  height: 55%;
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
@@ -102,10 +123,11 @@ body {
   align-self: flex-start;
 }
 .aboutDesc {
-  width: 50%;
+  width: 60%;
   height: 100%;
-  background-color: bisque;
-  border: 1px solid black;
+  background-color: aliceblue;
+
+  overflow: auto;
 }
 .skillsDivTop,
 .skillsDivBottom {
@@ -127,6 +149,11 @@ body {
   height: 100px;
   width: 150px;
 }
+.goBackLinks {
+  text-align: center;
+  text-decoration: none;
+}
+
 .Portfolio {
   height: 90%;
   width: 100%;
@@ -165,4 +192,19 @@ body {
 .projectImages {
   height: 300px;
   width: 300px;
+}
+.contactTitleDiv {
+  height: 15%;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid black;
+}
+.contactForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 45px;
 }

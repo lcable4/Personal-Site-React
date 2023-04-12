@@ -20,17 +20,19 @@ function HomePage() {
         <Navbar />
 
         <div className="introduction">
-          <h1>Logan Cable</h1>
-          <h4>Full stack web developer</h4>
+          <h1 className="homePageHeaders">Logan Cable</h1>
+          <h4 className="homePageHeaders">Full stack web developer</h4>
           <div className="linkDiv">
-            <Link to="/portfolio">See my work</Link>
+            <Link className="homePageLinks" to="/portfolio">
+              See my work
+            </Link>
           </div>
           <div className="linkDiv">
-            <Link to="/contact">Contact me</Link>
+            <Link className="homePageLinks" to="/contact">
+              Contact me
+            </Link>
           </div>
         </div>
-
-        <Footer />
       </div>
     </div>
   );
