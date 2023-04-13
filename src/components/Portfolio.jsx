@@ -72,12 +72,18 @@ function Portfolio() {
             />
           </div>
           <div className="project">
-            <h3 className="portFolioHeaders">Tic-Tac-Toe</h3>
-            <img
-              src="/images/projects/ticTacToe.png"
-              alt="Tic-Tac-Toe"
-              className="projectImages"
-            />
+            <a
+              href="https://tictactoe-logancable.netlify.app/"
+              target="_blank"
+              className="portfolioLinks"
+            >
+              <h3 className="portFolioHeaders">Tic-Tac-Toe</h3>
+              <img
+                src="/images/projects/ticTacToe.png"
+                alt="Tic-Tac-Toe"
+                className="projectImages"
+              />
+            </a>
           </div>
         </div>
         <Link className="goBackLinks" to="/">

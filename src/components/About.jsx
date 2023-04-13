@@ -30,11 +30,11 @@ function About() {
             </div>
             <div className="paragraph">
               <p className="aboutPTags">
-                As a former CDL driver, I bring a unique perspective to software
+                As a former CDL driver, I bring a unique perspective to web
                 development. I'm used to solving problems on the fly and
                 managing complex logistical challenges. I believe these skills
                 are transferrable to the tech industry and will help me excel as
-                a software developer.
+                a web developer.
               </p>
             </div>
             <div className="paragraph">
@@ -53,7 +53,26 @@ function About() {
               </p>
             </div>
           </div>
-          <div className="aboutRightDiv">Right</div>
+          <div className="aboutRightDiv">
+            <h1>Connect with me</h1>
+            <div className="aboutLinksDiv">
+              <a className="aboutLink" href="https://github.com/lcable4">
+                <img
+                  className="aboutImgs"
+                  src="/images/logos/github.png"
+                  alt="githubLogo"
+                />
+              </a>
+
+              <a className="aboutLink" href="https://github.com/lcable4">
+                <img
+                  className="aboutImgs"
+                  src="/images/logos/linkedIn.png"
+                  alt="linkedInLogo"
+                />
+              </a>
+            </div>
+          </div>
         </div>
         <div className="Skills">
           <h1 className="aboutHeaders1">Skills</h1>
