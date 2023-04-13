@@ -12,7 +12,7 @@ body {
   background-color: #f5f5ff;
 }
 .navbar-home {
-  background-color: black;
+  background-color: #2039bd;
   color: white;
   display: flex;
   align-items: center;
@@ -25,7 +25,7 @@ body {
   justify-content: space-evenly;
 }
 .navbar {
-  background-color: black;
+  background-color: #2039bd;
   color: white;
   display: flex;
   align-items: center;

@@ -28,6 +28,14 @@ function HomePage() {
             </Link>
           </div>
           <div className="linkDiv">
+            <a
+              className="homePageLinks"
+              href="/resume/Logan_Cable_Resume_13-04-2023-12-25-39.pdf"
+            >
+              Resume
+            </a>
+          </div>
+          <div className="linkDiv">
             <Link className="homePageLinks" to="/contact">
               Contact me
             </Link>
