@@ -6,8 +6,24 @@ function Portfolio() {
   return (
     <>
       <Navbar />
+      <h1 className="portFolioHeaders1">My Work</h1>
       <div className="Portfolio">
-        <h1 className="portFolioHeaders1">My Work</h1>
+        <div className="portfolioCapstone">
+          <div className="projectCapstone">
+            <a
+              href="https://driveze.netlify.app//"
+              target="_blank"
+              className="portfolioLinks"
+            >
+              <h3 className="portFolioHeaders">DrivEze Car Rental</h3>
+              <img
+                src="/images/projects/DrivEze-lite.png"
+                alt="Fitness Tracker"
+                className="projectImagesCapstone"
+              />
+            </a>
+          </div>
+        </div>
         <div className="portfolioTop">
           <div className="projectTop">
             <a
@@ -42,7 +58,7 @@ function Portfolio() {
           <div className="project">
             <h3 className="portFolioHeaders">Puppy Bowl</h3>
             <img
-              src="/images/projects/puppyBowl.PNG"
+              src="/images/projects/puppyBowl.png"
               alt="Puppy Bowl"
               className="projectImages"
             />
