@@ -2,6 +2,7 @@ body {
   margin: 0;
   height: 100vh;
   width: 100%;
+  font-family: "Dosis", sans-serif;
 }
 #app,
 #main {
@@ -91,6 +92,7 @@ body {
 }
 .aboutHeaders1 {
   text-align: center;
+  padding-top: 20px;
 }
 
 .aboutHeaders:hover {
@@ -98,7 +100,7 @@ body {
 }
 .homePageLinks {
   text-decoration: none;
-  font-size: 20px;
+  font-size: 25px;
 }
 .aboutPageContainer {
   height: 100%;
@@ -113,7 +115,7 @@ body {
 }
 .aboutPTags {
   font-size: 20px;
-  margin: 15px;
+  margin: 10px;
 }
 .aboutRightDiv {
   height: 100%;
@@ -151,6 +153,7 @@ body {
 }
 .aboutLink {
   height: 50%;
+  margin-bottom: 35px;
 }
 .skillsDivTop,
 .skillsDivBottom {
@@ -209,6 +212,7 @@ body {
   font-size: 25px;
   color: black;
   margin: 0;
+  padding-top: 21px;
 }
 .portfolioLinks {
   cursor: pointer;
@@ -226,13 +230,15 @@ body {
   margin-top: 15px;
 }
 .projectTop {
-  height: 300px;
+  height: 100%;
   width: 38%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin: 15px;
+  padding-top: 50px;
 }
 .project {
   height: 300px;
@@ -260,8 +266,10 @@ body {
 }
 .contactForm {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 45px;
+}
+.linkDiv {
+  text-align: center;
 }

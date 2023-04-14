@@ -54,7 +54,7 @@ function About() {
             </div>
           </div>
           <div className="aboutRightDiv">
-            <h1>Connect with me</h1>
+            <h1 className="aboutHeaders1">Connect with me</h1>
             <div className="aboutLinksDiv">
               <a
                 className="aboutLink"
@@ -84,6 +84,15 @@ function About() {
         </div>
         <div className="Skills">
           <h1 className="aboutHeaders1">Skills</h1>
+          <div className="linkDiv">
+            <a
+              className="homePageLinks"
+              href="/resume/Outreach_FullStack_Certificate_Cable.pdf"
+              target="_blank"
+            >
+              Full Stack Academy certificate
+            </a>
+          </div>
           <div className="skillsDivTop">
             <div className="topSkill">
               <h3 className="aboutHeaders">HTML</h3>

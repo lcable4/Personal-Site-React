@@ -12,8 +12,7 @@ function Contact() {
     <>
       <Navbar />
       <div className="contactTitleDiv">
-        <h1 className="contactTitle">Contact Me</h1>
-        <h3 className="contactHeader">I would love to hear from you.</h3>
+        <h2 className="contactHeader">I would love to hear from you.</h2>
       </div>
       <div className="contactForm">
         <iframe
