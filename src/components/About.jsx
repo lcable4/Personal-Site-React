@@ -56,7 +56,11 @@ function About() {
           <div className="aboutRightDiv">
             <h1>Connect with me</h1>
             <div className="aboutLinksDiv">
-              <a className="aboutLink" href="https://github.com/lcable4">
+              <a
+                className="aboutLink"
+                target="_blank"
+                href="https://github.com/lcable4"
+              >
                 <img
                   className="aboutImgs"
                   src="/images/logos/github.png"
@@ -64,7 +68,11 @@ function About() {
                 />
               </a>
 
-              <a className="aboutLink" href="https://github.com/lcable4">
+              <a
+                className="aboutLink"
+                target="_blank"
+                href="https://www.linkedin.com/in/logan-cable-619839148/"
+              >
                 <img
                   className="aboutImgs"
                   src="/images/logos/linkedIn.png"
