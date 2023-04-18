@@ -53,34 +53,6 @@ function About() {
               </p>
             </div>
           </div>
-          <div className="aboutRightDiv">
-            <h1 className="aboutHeaders1">Connect with me</h1>
-            <div className="aboutLinksDiv">
-              <a
-                className="aboutLink"
-                target="_blank"
-                href="https://github.com/lcable4"
-              >
-                <img
-                  className="aboutImgs"
-                  src="/images/logos/github.png"
-                  alt="githubLogo"
-                />
-              </a>
-
-              <a
-                className="aboutLink"
-                target="_blank"
-                href="https://www.linkedin.com/in/logan-cable-619839148/"
-              >
-                <img
-                  className="aboutImgs"
-                  src="/images/logos/linkedIn.png"
-                  alt="linkedInLogo"
-                />
-              </a>
-            </div>
-          </div>
         </div>
         <div className="Skills">
           <h1 className="aboutHeaders1">Skills</h1>
