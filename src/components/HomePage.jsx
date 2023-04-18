@@ -21,7 +21,7 @@ function HomePage() {
 
         <div className="introduction">
           <h1 className="homePageHeaders">Logan Cable</h1>
-          <h4 className="homePageHeaders">Full stack web developer</h4>
+          <h3 className="homePageHeaders">Full stack web developer</h3>
           <div className="linkDiv">
             <Link className="homePageLinks" to="/portfolio">
               See my work
@@ -40,6 +40,34 @@ function HomePage() {
             <Link className="homePageLinks" to="/contact">
               Contact me
             </Link>
+          </div>
+          <div className="socialLinksDiv">
+            <h1 className="aboutHeaders1">Connect with me</h1>
+            <div className="socialLinksDiv">
+              <a
+                className="aboutLink"
+                target="_blank"
+                href="https://github.com/lcable4"
+              >
+                <img
+                  className="aboutImgs"
+                  src="/images/logos/github.png"
+                  alt="githubLogo"
+                />
+              </a>
+
+              <a
+                className="aboutLink"
+                target="_blank"
+                href="https://www.linkedin.com/in/logan-cable-619839148/"
+              >
+                <img
+                  className="aboutImgs"
+                  src="/images/logos/linkedIn.png"
+                  alt="linkedInLogo"
+                />
+              </a>
+            </div>
           </div>
         </div>
       </div>
