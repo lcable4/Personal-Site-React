@@ -53,25 +53,7 @@ function Portfolio() {
               />
             </a>
           </div>
-        </div>
-        <div className="portfolioBottom">
-          <div className="project">
-            <h3 className="portFolioHeaders">Puppy Bowl</h3>
-            <img
-              src="/images/projects/puppyBowl.png"
-              alt="Puppy Bowl"
-              className="projectImages"
-            />
-          </div>
-          <div className="project">
-            <h3 className="portFolioHeaders">Qwirty</h3>
-            <img
-              src="/images/projects/qwirty.png"
-              alt="Qwirty"
-              className="projectImages"
-            />
-          </div>
-          <div className="project">
+          <div className="projectTop">
             <a
               href="https://tictactoe-logancable.netlify.app/"
               target="_blank"
@@ -81,6 +63,30 @@ function Portfolio() {
               <img
                 src="/images/projects/ticTacToe.png"
                 alt="Tic-Tac-Toe"
+                className="projectImagesTop"
+              />
+            </a>
+          </div>
+        </div>
+        <div className="portfolioBottom">
+          <div className="project">
+            <a href="https://github.com/lcable4/Mumblr">
+              <h3 className="portFolioHeaders">Mumblr</h3>
+              Github Link
+              <img
+                src="/images/projects/mumblr.png"
+                alt="Mumblr"
+                className="projectImages"
+              />
+            </a>
+          </div>
+          <div className="project">
+            <a href="https://github.com/jina366/puppyBowl/tree/main/src/components">
+              <h3 className="portFolioHeaders">Puppy Bowl</h3>
+              Github Link
+              <img
+                src="/images/projects/puppyBowl.png"
+                alt="Puppy Bowl"
                 className="projectImages"
               />
             </a>
