@@ -5,23 +5,21 @@ import { Link } from "react-router-dom";
 function HomePage() {
   return (
     <div className="HomePage">
-      <div className="homePicture">
-        <img
-          src="/images/logos/portrait.png"
-          alt="portrait"
-          className="portrait"
-        />
-        <div className="quoteDiv">
-          <p>"The best way to predict the future is to invent it."</p>
-          <p>" - Alan Kay."</p>
-        </div>
-      </div>
       <div className="homeDescription">
         <Navbar />
 
         <div className="introduction">
-          <h1 className="homePageHeaders">Logan Cable</h1>
+          <h1 className="homePageHeaders1">Logan Cable</h1>
           <h3 className="homePageHeaders">Full stack web developer</h3>
+          <img
+            src="/images/logos/portrait.png"
+            alt="portrait"
+            className="portrait"
+          />
+          <div className="quoteDiv">
+            <p>"The best way to predict the future is to invent it."</p>
+            <p>" - Alan Kay."</p>
+          </div>
           <div className="linkDiv">
             <Link className="homePageLinks" to="/portfolio">
               See my work

@@ -7,19 +7,28 @@
 
 body {
   margin: 0;
-  height: 100vh;
-  width: 100%;
+  height: 100%;
+  background-color: #afc2d5d0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  overflow: scroll;
   font-family: "Dosis", sans-serif;
+}
+html {
+  height: 100%;
 }
 #app,
 #main {
-  height: 100%;
+  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   background-color: #afc2d599;
+  height: 100%;
 }
-.navbar-home {
+/* .navbar-home {
   background-color: #b48b7dc2;
   color: white;
   display: flex;
@@ -31,7 +40,7 @@ body {
   width: 50%;
   flex-direction: row;
   justify-content: space-evenly;
-}
+} */
 .navbar {
   background-color: #b48b7dc2;
   color: white;
@@ -43,22 +52,47 @@ body {
   position: fixed;
   width: 100%;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 .navBarLinks {
   text-decoration: none;
   color: white;
   font-size: 20px;
+  margin: 0px 10px 0px;
 }
 .navBarLinks:hover {
   transform: scale(1.2);
 }
 
 .HomePage {
-  height: 100vh;
+  height: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  max-width: 900px;
+  padding-bottom: 5px;
 }
+@media only screen and (min-width: 768px) {
+  .HomePage {
+    max-width: 600px;
+  }
+  .homeDescription {
+    height: 100%;
+  }
+  .homePageHeaders1,
+  .portFolioHeaders1 {
+    font-size: 45px;
+  }
+  .aboutPageContainer {
+    max-width: 600px;
+    flex-direction: row;
+  }
+  .skillLogo {
+    margin: 10px;
+  }
+}
+
 .homePicture {
   width: 50%;
   display: flex;
@@ -83,7 +117,7 @@ body {
   justify-content: center;
 }
 .homeDescription {
-  width: 50%;
+  width: 90%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -91,17 +125,22 @@ body {
   text-align: center;
 }
 .introduction {
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-height: 90%;
+}
+.homePageHeaders1 {
+  margin-top: 50px;
 }
 .homePageHeaders,
 .aboutHeaders {
   text-align: center;
+  margin: 0;
 }
 .aboutHeaders1 {
   text-align: center;
-  padding-top: 30px;
 }
 
 .aboutHeaders:hover {
@@ -112,17 +151,21 @@ body {
   font-size: 25px;
   color: #fff9a5ff;
 }
+
 .aboutPageContainer {
   height: 100%;
+  max-width: 900px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  align-items: center;
 }
 .About {
   height: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 300px;
 }
 .aboutPTags {
   font-size: 20px;
@@ -156,8 +199,9 @@ body {
   text-align: center;
 }
 .aboutImgs {
-  width: 50%;
+  width: 20%;
   margin: 20px;
+  padding-bottom: 20px;
 }
 .aboutImgs:hover {
   transform: scale(1.2);
@@ -202,10 +246,9 @@ body {
   justify-content: flex-end;
   align-items: center;
   overflow: auto;
+  max-width: 900px;
 }
-.portfolioCapstone {
-  height: 20%;
-}
+
 .projectCapstone {
   display: flex;
   flex-direction: column;
@@ -213,7 +256,6 @@ body {
   justify-content: center;
   text-align: center;
   height: 170%;
-  margin: 20px;
 }
 .projectImagesCapstone {
   height: 60%;
@@ -268,7 +310,9 @@ body {
   height: 200px;
   width: 100%;
 }
-
+.formContainer {
+  height: 100%;
+}
 .contactTitleDiv {
   height: 15%;
   margin-top: 30px;
@@ -282,7 +326,65 @@ body {
   justify-content: flex-end;
   flex-direction: column;
   align-items: center;
+  max-width: 900px;
 }
 .linkDiv {
   text-align: center;
+}
+
+@media only screen and (max-width: 390px) {
+  .HomePage {
+    max-width: 300px;
+  }
+  .portrait {
+    display: none;
+  }
+  .homeDescription {
+    height: 100%;
+  }
+  .introduction {
+    justify-content: space-evenly;
+  }
+  .homePageHeaders1,
+  .portFolioHeaders1 {
+    font-size: 45px;
+  }
+  .aboutPageContainer {
+    align-items: center;
+  }
+  .About {
+    max-width: 330px;
+  }
+  .aboutImgs {
+    width: 100px;
+    padding-bottom: 0px;
+  }
+  .skillLogo {
+    margin: 0px 20px 0px;
+  }
+  .Portfolio {
+    max-width: 330px;
+    padding: 15px;
+  }
+  .portFolioHeaders1 {
+    margin: 35px 0px 0px;
+  }
+  .projectImagesTop {
+    height: 100px;
+    width: 90px;
+    overflow-x: auto;
+  }
+  .projectImages {
+    height: 100px;
+  }
+  .projectImagesCapstone {
+    height: 50%;
+    width: 150px;
+  }
+  .googleForm {
+    max-width: 330px;
+  }
+  .contactHeader {
+    margin: 0;
+  }
 }

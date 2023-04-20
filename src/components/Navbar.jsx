@@ -7,7 +7,7 @@ const Navbar = () => {
   const navbarClass = isHomePage ? "navbar-home" : "navbar";
 
   return (
-    <div className={navbarClass}>
+    <div className="navbar">
       <Link className="navBarLinks" to="/">
         Home
       </Link>

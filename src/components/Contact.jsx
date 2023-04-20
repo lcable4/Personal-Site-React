@@ -9,9 +9,9 @@ function Contact() {
   const [message, setMessage] = useState("");
 
   return (
-    <>
-      <Navbar />
+    <div className="formContainer">
       <div className="contactTitleDiv">
+        <Navbar />
         <h2 className="contactHeader">I would love to hear from you.</h2>
       </div>
       <div className="contactForm">
@@ -19,6 +19,7 @@ function Contact() {
           src="https://docs.google.com/forms/d/e/1FAIpQLSdBCt9RrLnn1dVYAkwCEPa0XcE9emiNi_dGYOEM8_WvlQRYiA/viewform?embedded=true"
           width="640"
           height="750"
+          className="googleForm"
         >
           Loading…
         </iframe>
@@ -26,7 +27,7 @@ function Contact() {
           Go back
         </Link>
       </div>
-    </>
+    </div>
   );
 }
 
