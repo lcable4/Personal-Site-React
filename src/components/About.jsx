@@ -5,9 +5,9 @@ import { Navbar, Footer } from "./index";
 function About() {
   return (
     <>
-      <Navbar />
       <div className="aboutPageContainer">
         <div className="About">
+          <Navbar />
           <div className="aboutDesc">
             <h1 className="aboutHeaders1">About me</h1>
             <div className="paragraph">
