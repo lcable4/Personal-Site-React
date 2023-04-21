@@ -9,8 +9,10 @@ function HomePage() {
         <Navbar />
 
         <div className="introduction">
-          <h1 className="homePageHeaders1">Logan Cable</h1>
-          <h3 className="homePageHeaders">Full stack web developer</h3>
+          <div className="headersDiv">
+            <h1 className="homePageHeaders1">Logan Cable</h1>
+            <h3 className="homePageHeaders">Full stack web developer</h3>
+          </div>
           <img
             src="/images/logos/portrait.png"
             alt="portrait"
@@ -20,24 +22,26 @@ function HomePage() {
             <p>"The best way to predict the future is to invent it."</p>
             <p>" - Alan Kay."</p>
           </div>
-          <div className="linkDiv">
-            <Link className="homePageLinks" to="/portfolio">
-              See my work
-            </Link>
-          </div>
-          <div className="linkDiv">
-            <a
-              className="homePageLinks"
-              href="/resume/Logan_Cable_Resume_19-04-2023-21-23-50.pdf"
-              target="_blank"
-            >
-              Resume
-            </a>
-          </div>
-          <div className="linkDiv">
-            <Link className="homePageLinks" to="/contact">
-              Contact me
-            </Link>
+          <div className="socialLinksDiv">
+            <div className="linkDiv">
+              <Link className="homePageLinks" to="/portfolio">
+                See my work
+              </Link>
+            </div>
+            <div className="linkDiv">
+              <a
+                className="homePageLinks"
+                href="/resume/Logan_Cable_Resume_19-04-2023-21-23-50.pdf"
+                target="_blank"
+              >
+                Resume
+              </a>
+            </div>
+            <div className="linkDiv">
+              <Link className="homePageLinks" to="/contact">
+                Contact me
+              </Link>
+            </div>
           </div>
           <div className="socialLinksDiv">
             <h1 className="aboutHeaders1">Connect with me</h1>

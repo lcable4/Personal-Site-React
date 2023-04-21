@@ -71,7 +71,7 @@ html {
   align-items: center;
   justify-content: flex-end;
   max-width: 900px;
-  padding-bottom: 5px;
+  padding-bottom: 15px;
 }
 
 .homePicture {
@@ -89,7 +89,7 @@ html {
 }
 .quoteDiv {
   text-align: center;
-  margin-bottom: 30px;
+  margin: 20px;
   font-size: 25px;
 }
 .homePicture {
@@ -120,17 +120,21 @@ html {
   text-align: center;
   margin: 0;
 }
-.aboutHeaders1 {
-  text-align: center;
-}
-
-.aboutHeaders:hover {
-  transform: scale(1.2);
-}
 .homePageLinks {
   text-decoration: none;
   font-size: 25px;
   color: #fff9a5ff;
+}
+.headersDiv {
+  margin: 20px;
+}
+.aboutHeaders1 {
+  text-align: center;
+  margin: 0;
+}
+
+.aboutHeaders:hover {
+  transform: scale(1.2);
 }
 
 .aboutPageContainer {
@@ -229,7 +233,9 @@ html {
   overflow: auto;
   max-width: 900px;
 }
-
+.portfolioContainer {
+  height: 90%;
+}
 .projectCapstone {
   display: flex;
   flex-direction: column;
@@ -362,11 +368,23 @@ html {
     height: 100%;
   }
   .introduction {
-    justify-content: space-evenly;
+    justify-content: center;
+  }
+  .headersDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30%;
   }
   .homePageHeaders1,
   .portFolioHeaders1 {
     font-size: 45px;
+    margin: 0;
+  }
+  .About {
+    height: 49%;
+    padding-bottom: 5px;
   }
   .Portfolio {
     max-width: 330px;
@@ -374,6 +392,9 @@ html {
   }
   .portFolioHeaders1 {
     margin: 35px 0px 0px;
+  }
+  .portfolioContainer {
+    height: 90%;
   }
   .projectImagesTop {
     height: 100px;
