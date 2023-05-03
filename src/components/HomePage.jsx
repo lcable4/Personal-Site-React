@@ -14,7 +14,7 @@ function HomePage() {
             <h3 className="homePageHeaders">Full stack web developer</h3>
           </div>
           <img
-            src="/images/logos/portrait.png"
+            src="/images/logos/LoganCable.jpg"
             alt="portrait"
             className="portrait"
           />
