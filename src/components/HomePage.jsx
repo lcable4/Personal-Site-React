@@ -31,7 +31,7 @@ function HomePage() {
             <div className="linkDiv">
               <a
                 className="homePageLinks"
-                href="/resume/resumeMay2.pdf"
+                href="/resume/Logan.Cable.pdf"
                 target="_blank"
               >
                 Resume
