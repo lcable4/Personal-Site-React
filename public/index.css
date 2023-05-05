@@ -7,7 +7,7 @@
 
 body {
   margin: 0;
-  height: 100%;
+  height: 100vh;
   background-color: #afc2d5d0;
   display: flex;
   flex-direction: column;
@@ -42,7 +42,7 @@ html {
   justify-content: space-evenly;
 } */
 .navbar {
-  background-color: #b48b7dc2;
+  background-color: #b48b7d;
   color: white;
   display: flex;
   align-items: center;
@@ -139,7 +139,7 @@ html {
 
 .aboutPageContainer {
   height: 100%;
-  max-width: 1100px;
+  width: 1100px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -150,7 +150,7 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 300px;
+  width: 90%;
 }
 .aboutPTags {
   font-size: 20px;
@@ -164,7 +164,8 @@ html {
   width: 40%;
 }
 .Skills {
-  height: 45%;
+  height: 40%;
+  width: 90%;
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
@@ -219,12 +220,18 @@ html {
 .goBackLinks {
   text-align: center;
   text-decoration: none;
-  font-size: 20px;
-  background-color: #afc2d599;
+  font-size: 30px;
+
+  color: #fff9a5ff;
 }
 
+.portfolioContainer {
+  height: 95%;
+  display: flex;
+  flex-direction: column;
+}
 .Portfolio {
-  height: 85%;
+  height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -233,16 +240,12 @@ html {
   overflow: auto;
   max-width: 900px;
 }
-.portfolioContainer {
-  height: 90%;
-}
-.projectCapstone {
+.portfolioCapstone {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  height: 170%;
 }
 .projectImagesCapstone {
   height: 60%;
@@ -255,7 +258,6 @@ html {
   font-size: 25px;
   color: black;
   margin: 5px;
-  padding-top: 40px;
 }
 .portfolioLinks {
   cursor: pointer;
@@ -264,7 +266,7 @@ html {
 
 .portfolioTop,
 .portfolioBottom {
-  height: 40%;
+  height: 30%;
   width: 95%;
   display: flex;
   flex-direction: row;
@@ -281,7 +283,6 @@ html {
   align-items: center;
   text-align: center;
   margin: 15px;
-  padding-top: 50px;
 }
 .project {
   height: 300px;
@@ -295,7 +296,7 @@ html {
 }
 .projectImages {
   height: 200px;
-  width: 100%;
+  width: 80%;
 }
 .formContainer {
   height: 100%;
@@ -344,6 +345,8 @@ html {
 @media only screen and (max-width: 412px) {
   .aboutPageContainer {
     max-width: 300px;
+    height: 95%;
+    justify-content: space-evenly;
   }
   .aboutImgs {
     width: 35%;
@@ -386,19 +389,39 @@ html {
     height: 49%;
     padding-bottom: 5px;
   }
+  .aboutHeaders1 {
+    margin-top: 10px;
+  }
   .Portfolio {
     max-width: 330px;
     padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
   }
   .portFolioHeaders1 {
-    margin: 35px 0px 0px;
+    margin: 0;
   }
   .portfolioContainer {
-    height: 90%;
+    height: 95%;
   }
+  .project {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  .portfolioBottom,
+  .portfolioTop {
+    margin: 0;
+  }
+
   .projectImagesTop {
-    height: 100px;
-    width: 90px;
+    height: 110px;
+    width: 100px;
     overflow-x: auto;
   }
   .projectImages {
@@ -407,6 +430,7 @@ html {
   .projectImagesCapstone {
     height: 50%;
     width: 150px;
+    margin: 10px;
   }
   .googleForm {
     max-width: 330px;

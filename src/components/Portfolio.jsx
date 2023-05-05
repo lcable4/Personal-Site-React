@@ -5,8 +5,8 @@ import { Navbar, Footer } from "./index";
 function Portfolio() {
   return (
     <div className="portfolioContainer">
-      <h1 className="portFolioHeaders1">My Work</h1>
       <div className="Portfolio">
+        <h1 className="portFolioHeaders1">My Work</h1>
         <Navbar />
         <div className="portfolioCapstone">
           <div className="projectCapstone">
