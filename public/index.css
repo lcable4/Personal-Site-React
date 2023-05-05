@@ -491,3 +491,8 @@ html {
     margin: 0;
   }
 }
+@media only screen and (min-height: 360px) {
+  .aboutDesc {
+    height: 90%;
+  }
+}
