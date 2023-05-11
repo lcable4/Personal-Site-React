@@ -320,7 +320,10 @@ html {
 .linkDiv {
   text-align: center;
 }
-
+.cardContainer {
+  width: 100%;
+  overflow: auto;
+}
 @media only screen and (max-width: 768px) {
   .HomePage {
     max-width: 600px;
@@ -433,6 +436,7 @@ html {
     width: 150px;
     margin: 10px;
   }
+
   .googleForm {
     max-width: 330px;
   }
@@ -440,6 +444,7 @@ html {
     margin: 0;
   }
 }
+
 @media only screen and (max-width: 390px) {
   .HomePage {
     max-width: 300px;
