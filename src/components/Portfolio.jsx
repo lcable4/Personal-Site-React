@@ -1,102 +1,93 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Navbar, Footer } from "./index";
+import ImageList from "@mui/material/ImageList";
+import ImageListItem from "@mui/material/ImageListItem";
+import ImageListItemBar from "@mui/material/ImageListItemBar";
 
 function Portfolio() {
+  const itemData = [
+    {
+      img: "/images/projects/DrivEze-lite.png",
+      title: "DrivEze Car Rentals",
+
+      link: "https://driveze.netlify.app//",
+      linkName: "DrivEze",
+    },
+    {
+      img: "/images/projects/fitnessTracker.png",
+      title: "Fitness Tracker",
+
+      link: "https://fitnesstracker-application.netlify.app/",
+    },
+    {
+      img: "/images/projects/stranger'sThings.png",
+      title: "Stranger's Things",
+
+      link: "https://strangersthings-marketplace.netlify.app/",
+    },
+    {
+      img: "/images/projects/ticTacToe.png",
+      title: "Tic Tac Toe",
+
+      link: "https://tictactoe-logancable.netlify.app/",
+    },
+    {
+      img: "/images/projects/mumblr.png",
+      title: "Mumblr",
+
+      link: "https://github.com/lcable4/Mumblr",
+    },
+    {
+      img: "/images/projects/puppyBowl.png",
+      title: "Puppy Bowl",
+
+      link: "https://github.com/jina366/puppyBowl/tree/main/src/components",
+    },
+  ];
   return (
-    <div className="portfolioContainer">
-      <div className="Portfolio">
+    <>
+      <Navbar />
+      <div className="portfolioContainer">
         <h1 className="portFolioHeaders1">My Work</h1>
-        <Navbar />
-        <div className="portfolioCapstone">
-          <div className="projectCapstone">
-            <a
-              href="https://driveze.netlify.app//"
-              target="_blank"
-              className="portfolioLinks"
-            >
-              <h3 className="portFolioHeaders">DrivEze Car Rental</h3>
+        <ImageList sx={{ width: "100%", height: "100%", objectFit: "contain" }}>
+          {itemData.map((item) => (
+            <ImageListItem className="imgList" key={item.img}>
               <img
-                src="/images/projects/DrivEze-lite.png"
-                alt="Fitness Tracker"
-                className="projectImagesCapstone"
+                src={`${item.img}?w=200&fit=crop&auto=format`}
+                srcSet={`${item.img}?w=200&fit=crop&auto=format&dpr=2 2x`}
+                alt={item.title}
+                loading="lazy"
+                style={{
+                  width: "300px",
+                  height: "300px",
+                  objectFit: "contain",
+                  marginBottom: "20px",
+                  margin: "7px",
+                }}
               />
-            </a>
-          </div>
-        </div>
-        <div className="portfolioTop">
-          <div className="projectTop">
-            <a
-              href="https://fitnesstracker-application.netlify.app/"
-              target="_blank"
-              className="portfolioLinks"
-            >
-              <h3 className="portFolioHeaders">Fitness Tracker</h3>
-              <img
-                src="/images/projects/fitnessTracker.png"
-                alt="Fitness Tracker"
-                className="projectImagesTop"
-              />
-            </a>
-          </div>
-          <div className="projectTop">
-            <a
-              href="https://strangersthings-marketplace.netlify.app/"
-              target="_blank"
-              className="portfolioLinks"
-            >
-              <h3 className="portFolioHeaders">Stranger's Things</h3>
-              <img
-                src="/images/projects/stranger'sThings.png"
-                alt="Stranger's Things"
-                className="projectImagesTop"
-              />
-            </a>
-          </div>
-          <div className="projectTop">
-            <a
-              href="https://tictactoe-logancable.netlify.app/"
-              target="_blank"
-              className="portfolioLinks"
-            >
-              <h3 className="portFolioHeaders">Tic-Tac-Toe</h3>
-              <img
-                src="/images/projects/ticTacToe.png"
-                alt="Tic-Tac-Toe"
-                className="projectImagesTop"
-              />
-            </a>
-          </div>
-        </div>
-        <div className="portfolioBottom">
-          <div className="project">
-            <a href="https://github.com/lcable4/Mumblr">
-              <h3 className="portFolioHeaders">Mumblr</h3>
-              Github Link
-              <img
-                src="/images/projects/mumblr.png"
-                alt="Mumblr"
-                className="projectImages"
-              />
-            </a>
-          </div>
-          <div className="project">
-            <a href="https://github.com/jina366/puppyBowl/tree/main/src/components">
-              <h3 className="portFolioHeaders">Puppy Bowl</h3>
-              Github Link
-              <img
-                src="/images/projects/puppyBowl.png"
-                alt="Puppy Bowl"
-                className="projectImages"
-              />
-            </a>
-          </div>
-        </div>
+              <a
+                href={item.link}
+                style={{
+                  textDecoration: "none",
+                  color: "blue",
+                  textAlign: "center",
+                  fontSize: "20px",
+                }}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <ImageListItemBar title={item.title} position="below" />
+              </a>
+            </ImageListItem>
+          ))}
+        </ImageList>
+
         <Link className="goBackLinks" to="/">
           Go back
         </Link>
       </div>
-    </div>
+    </>
   );
 }
 
